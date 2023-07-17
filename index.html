@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/num.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font khmer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moul&display=swap" rel="stylesheet">
+
+    <title>NUM Recording</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="img/num.png" class="logo" alt="">
+        <h2>
+            <!-- <span class="kh-font">សកលវិទ្យាល័យជាតិគ្រប់គ្រង </span> <br>
+            <span class="en-font">National University of Management</span> -->
+            <span class="en-font">NUM Record Meeting</span>
+        </h2>
+    </div>
+    <div class="title">
+        <!-- <img src="img/img5.png" alt=""> -->
+        <!-- <h3>WELCOME TO NUM RECORD MEETING</h3> -->
+    </div>
+
+    <div class="main" id="temp_main">
+        <div class="box center" onclick="recordScreen();"><img src="img/img9.png" alt=""><span class="name">Screen Recording</span></div>
+        <!-- <div class="box center" onclick="recordScreen_webcam();"><img src="img/img10.png" alt=""><span class="name">Webcam</span></div> -->
+        <a id="download" class="api_display_none" download="output.mp4"></a>
+    </div>
+    <video id="video" autoplay height='480' width="100%" muted></video>
+    <!-- recording-block================ -->
+        <div class="recording-block api_display_none" id="temp_recording_block">
+            <div class="recording-left">
+                <div class="recording-img">
+                    <div class="recording-animation">Recording...<span class="dotting"></span> </div>
+                </div>
+                <div class="recording-right">
+                    <div class="count-down-num" id="recordedTime">0:00:00</div>
+                    <div class="record-control-btns">
+                        <div class="pause-or-resume"> <button class="record-btn record-stop" id="pause-record"> </button>
+                            <!-- <div class="pause-resume-word pause" hidden="hidden">Pause</div> -->
+                            <div id="resume_pause" class="pause-resume-word resume">Pause</div>
+                        </div>
+                        <div class="end-record"> 
+                            <button class="record-btn record-end" id="stop-record"> 
+                                <span></span>
+                            </button>
+                            <div class="pause-resume-word" >Stop</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choosed-medias">
+                <div class="item-camera" id="chooseCamera"></div>
+                <div class="item-audio active" id="chooseAudio"></div>
+                <div class="item-mic" id="chooseMic"></div>
+            </div>
+            
+        </div>
+    <!-- recording-block================ -->
+
+    <!-- modal===================== -->
+        <div class="modal_container api_display_none" id="modal_container">
+            <input type="checkbox" id="check">
+            <div class="background"></div>
+            <div class="alert_box">
+            <header>?</header>
+            <p class="modal_quation">Would you like to stop recording?</p>
+            <div class="btns">
+                <label id="finish_record">Yes</label>
+                <label onclick="document.getElementById('modal_container').classList.add('api_display_none');">Cancel</label>
+            </div>
+            </div>
+        </div>
+    <!-- modal===================== -->
+
+    <!-- <div class="api_count api_display_none" id="api_count">
+        <img src="img/v1E8Po.gif">
+    </div> -->
+</body>
+
+</html>
+
+<script src="js/script.js"></script>
