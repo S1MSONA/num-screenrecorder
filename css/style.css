@@ -141,7 +141,7 @@ body {
 .recording-block .recording-img {
   width: 440px;
   height: 248px;
-  background: black url(/img/wave.c34ebec5.svg) center no-repeat;
+  background: navy url(/img/wave.c34ebec5.svg) center no-repeat;
   background-size: contain;
   border-radius: 20px;
   font-weight: 600;
@@ -161,7 +161,7 @@ body {
 .recording-block .count-down-num {
   font-size: 64px;
   line-height: 42px;
-  color: #022125;
+  color: navy;
   text-align: center;
   padding: 30px 60px;
   background: #fff no-repeat;
@@ -184,7 +184,7 @@ body {
   border-radius: 50%;
   margin: 30px auto 0;
   border: none;
-  background-color: #1fb5c9;
+  background-color: navy;
   background-position: 50%;
   background-repeat: no-repeat;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -232,7 +232,7 @@ body {
 }
 
 /* .modal_container {
-    display: none;
+  display: none;
 } */
 .alert_box,
 .show_button {
@@ -291,8 +291,8 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 /* .background{
-  opacity: 1;
-  pointer-events: auto;
+opacity: 1;
+pointer-events: auto;
 } */
 #check {
   display: none;
