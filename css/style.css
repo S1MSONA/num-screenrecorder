@@ -17,7 +17,7 @@ body {
   background-color: blue;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 10px;
   height: 100px;
 }
 @media screen and (max-width: 768px) {
