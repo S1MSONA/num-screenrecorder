@@ -52,7 +52,9 @@ body {
     margin-left: 35px;
   }
 }
-/* main */
+/* end of header */
+
+/* main section */
 .main {
   height: 65vh;
   display: flex;
