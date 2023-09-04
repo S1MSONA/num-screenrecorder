@@ -17,30 +17,27 @@
 
     <title>num-screenrecorder</title>
   </head>
-
   <body>
-    <div class="navbar">
-      <img src="img/num.png" class="logo" alt="" />
-      <h2>
-        <!-- <span class="kh-font">សកលវិទ្យាល័យជាតិគ្រប់គ្រង </span> <br>
-            <span class="en-font">National University of Management</span> -->
-        <span class="en-font">NUM RECORD MEETING</span>
-      </h2>
-    </div>
-    <div class="title">
-      <!-- <img src="img/img5.png" alt=""> -->
-      <!-- <h3>WELCOME TO NUM RECORD MEETING</h3> -->
-    </div>
-
-    <div class="main" id="temp_main">
-      <div class="box center" onclick="recordScreen();">
-        <img src="img/recorder-logo.png" alt="" /><span class="name"
-          >Screen Recorder</span
-        >
-      </div>
+    <header class="nav-bar">
+      <nav class="navigation container-width">
+        <div class="logo">
+          <img src="img/num.png" alt="num logog" />
+        </div>
+        <div class="title">
+          <h1>NUM RECORD MEETING</h1>
+        </div>
+      </nav>
+    </header>
+    <section class="main" id="temp_main">
+      <article class="card" onclick="recordScreen();">
+        <div class="record-icon">
+          <img src="img/recorder-logo.png" alt="icnon record" />
+        </div>
+        <h3>Screen Recorder</h3>
+      </article>
       <!-- <div class="box center" onclick="recordScreen_webcam();"><img src="img/img10.png" alt=""><span class="name">Webcam</span></div> -->
       <a id="download" class="api_display_none" download="output.mp4"></a>
-    </div>
+    </section>
     <video id="video" autoplay height="480" width="100%" muted></video>
     <!-- recording-block================ -->
     <div class="recording-block api_display_none" id="temp_recording_block">
